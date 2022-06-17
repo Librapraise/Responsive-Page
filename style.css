@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/bg-intro-desktop.png);
+  background-image: url(./bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
 }
 
@@ -156,7 +156,7 @@ small {
     top: 0;
     left: 0;
     height: 100vh;
-    background-image: url(/bg-intro-mobile.png);
+    background-image: url(./bg-intro-mobile.png);
     background-size: cover;
     background-position-x: 20%;
     background-position-y: 20%;
