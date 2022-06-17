@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  margin: auto;
   background-image: url(/bg-intro-desktop.png);
   display: flex;
   justify-content: center;
