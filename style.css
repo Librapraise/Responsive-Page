@@ -6,23 +6,24 @@
 body {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   background-image: url(/bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
 }
 
 .container {
   max-width: 1440px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
+  margin: 5em;
+  display: grid;
+  grid-template-areas: "a b";
+  gap: 1em;
 }
-
-.row {
-  flex-basis: 31%;
+.box1 {
+  grid-area: a;
+  padding-top: 10em;
+}
+.box2 {
+  grid-area: b;
 }
 
 h1 {
@@ -70,7 +71,7 @@ h3 {
 .form {
   background-color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 3px;
 }
 input {
@@ -125,7 +126,7 @@ input:hover {
   margin-top: -10px;
   font-size: 8px;
   text-align: right;
-  margin-left: 51px;
+  margin-left: 21px;
 }
 
 .control.error input {
@@ -164,10 +165,11 @@ small {
   }
 
   .container {
-    display: flex;
+    display: grid;
+    grid-template-areas: "a" "b";
   }
-  .row {
-    flex-basis: 54%;
+  .box1 {
+    padding-top: 1em;
   }
   h1 {
     text-align: center;
@@ -179,24 +181,24 @@ small {
     margin-bottom: 30px;
   }
   h3 {
-    width: 93%;
+    width: 97%;
     margin-bottom: 15px;
     padding: 10px;
     text-align: center;
   }
   form {
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .box1 {
     margin-left: 24px;
   }
   input {
-    width: 93%;
+    width: 85%;
     font-weight: 600;
   }
   .btn {
-    width: 109%;
+    width: 90%;
     height: 34px;
     font-size: 11px;
     font-weight: 700;
@@ -215,13 +217,13 @@ small {
   }
   .control .error-img {
     position: absolute;
-    margin-top: -44px;
-    margin-left: 88px;
+    margin-top: 7px;
+    margin-left: -41px;
   }
 
   .control .small {
     position: absolute;
-    margin-top: -12px;
-    margin-left: 1px;
+    margin-top: 45px;
+    margin-left: -108px;
   }
 }
