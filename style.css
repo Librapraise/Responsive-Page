@@ -220,13 +220,13 @@ small {
   }
   .control .error-img {
     position: absolute;
-    margin-top: -28px;
+    margin-top: -48px;
     margin-left: 30px;
   }
 
   .control .small {
     position: absolute;
     margin-top: 45px;
-    margin-left: 170px;
+    margin-left: 10px;
   }
 }
