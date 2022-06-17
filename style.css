@@ -3,20 +3,22 @@
   padding: 0;
 }
 
-body {
-  width: 100%;
-  min-height: 100vh;
-<<<<<<< HEAD
 
+
+body {
+
+  width: 100%;
+
+  min-height: 100vh;
   background-image: url(/bg-intro-desktop.png);
-=======
+
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(./bg-intro-desktop.png);
->>>>>>> 8dc6df28d348730fea998b286473d9377a3a8c6d
   background-color: hsl(0, 100%, 74%);
 }
+
 
 .container {
   max-width: 1440px;
