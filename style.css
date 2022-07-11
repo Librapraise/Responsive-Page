@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  margin: auto;
+  min-height: 100vh;
   background-image: url(/bg-intro-desktop.png);
   display: flex;
   justify-content: center;
@@ -15,18 +15,21 @@ body {
 }
 
 .container {
-  max-width: 1440px;
-  margin: 5em;
-  display: grid;
-  grid-template-areas: "a b";
-  gap: 1em;
+  max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
 }
-.box1 {
-  grid-area: a;
-  padding-top: 10em;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 25px;
 }
-.box2 {
-  grid-area: b;
+
+.col{
+  flex-basis: 50%;
+  min-width: 380px;
 }
 
 h1 {
@@ -41,6 +44,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  padding-right: 20px;
 }
 
 .control {
@@ -49,7 +53,7 @@ p {
 
 h3 {
   background-color: hsl(248, 32%, 49%);
-  width: 97%;
+  width: 90%;
   border-radius: 3px;
   padding: 8px 6px;
   font-size: 16px;
@@ -59,26 +63,22 @@ h3 {
   font-family: "Poppins", sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.55);
 }
-.box1 {
-  margin-right: 17px;
-}
-.box2 {
-  margin-left: 17px;
-}
+
 .span1 {
   font-size: 16px;
   text-transform: lowercase;
   font-weight: 200;
 }
 
-.form {
+.box {
+  width: 90%;
   background-color: #fff;
   text-align: center;
-  padding: 15px;
+  padding: 25px 7px;
   border-radius: 3px;
 }
 input {
-  width: 90%;
+  width: 80%;
   height: 1px;
   padding: 15px;
   font-weight: 600;
@@ -92,7 +92,7 @@ input:hover {
   border: 2px solid hsl(249, 10%, 26%);
 }
 .btn {
-  width: 102%;
+  width: 87%;
   color: #fff;
   background-color: hsl(154, 59%, 51%);
   border: none;
@@ -107,13 +107,25 @@ input:hover {
   transition: 0.4s;
   color: hsl(154, 59%, 51%);
 }
-.control .error-img {
+
+
+.control{
+  position: relative;
+}
+.control img{
   position: absolute;
-  margin-top: -44px;
-  margin-left: 105px;
-  width: 20px;
+  top: 5px;
+  right: 50px;
   visibility: hidden;
 }
+
+.control .small{
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+}
+
+
 .control.error .error-img {
   visibility: visible;
 }
@@ -124,13 +136,7 @@ input:hover {
   visibility: hidden;
 }
 
-.control .small {
-  position: absolute;
-  margin-top: -10px;
-  font-size: 8px;
-  text-align: right;
-  margin-left: 21px;
-}
+
 
 .control.error input {
   border-color: hsl(0, 100%, 74%);
@@ -167,13 +173,6 @@ small {
     overflow: hidden;
   }
 
-  .container {
-    display: grid;
-    grid-template-areas: "a" "b";
-  }
-  .box1 {
-    padding-top: 1em;
-  }
   h1 {
     text-align: center;
     font-size: 25px;
@@ -184,30 +183,22 @@ small {
     margin-bottom: 30px;
   }
   h3 {
-    width: 97%;
+    width: 95%;
     margin-bottom: 15px;
     padding: 10px;
     text-align: center;
   }
-  form {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  .box1 {
-    margin-left: 24px;
-  }
-  input {
-    width: 85%;
-    font-weight: 600;
+  .box{
+    width: 95%;
+    padding: 25px 10px;
   }
   .btn {
     width: 90%;
     height: 34px;
     font-size: 11px;
     font-weight: 700;
-    margin-bottom: -15px;
+    margin-bottom: 5px;
   }
-
   small {
     font-size: 10px;
     font-weight: 300;
@@ -218,15 +209,16 @@ small {
     color: hsl(0, 100%, 74%);
     font-weight: 600;
   }
-  .control .error-img {
+  
+  .control img{
     position: absolute;
-    margin-top: 7px;
-    margin-left: -41px;
+    top: 5px;
+    right: 28px;
   }
-
-  .control .small {
+  
+  .control .small{
     position: absolute;
-    margin-top: 40px;
-    margin-left: -108px;
+    bottom: 8px;
+    right: 20px;
   }
 }
