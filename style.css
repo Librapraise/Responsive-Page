@@ -6,17 +6,12 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-image: url(/bg-intro-desktop.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(./bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
 }
 
 .container {
-  max-width: 1300px;
-    margin: auto;
+    margin: 70px auto;
     padding: 0 25px;
 }
 .row{
@@ -29,7 +24,7 @@ body {
 
 .col{
   flex-basis: 50%;
-  min-width: 380px;
+  min-width: 350px;
 }
 
 h1 {
@@ -168,8 +163,7 @@ small {
     height: 100vh;
     background-image: url(./bg-intro-mobile.png);
     background-size: cover;
-    background-position-x: 20%;
-    background-position-y: 20%;
+    background-position: center;
     overflow: hidden;
   }
 
